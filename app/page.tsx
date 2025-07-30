@@ -342,13 +342,23 @@ export default function Portfolio() {
 
                 <ScrollAnimation animation="fadeInUp" delay={200}>
                   <div className="mt-8 flex gap-4">
-                    <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700">
-                      <Users className="h-4 w-4 mr-2" />
-                      Let's Collaborate
+                    <Button 
+                      className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+                      asChild
+                    >
+                      <a href="mailto:alikhizar142@gmail.com?subject=Collaboration%20Opportunity&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20potential%20collaboration%20opportunities.%0A%0ABest%20regards,">
+                        <Users className="h-4 w-4 mr-2" />
+                        Let's Collaborate
+                      </a>
                     </Button>
-                    <Button variant="outline">
-                      <BookOpen className="h-4 w-4 mr-2" />
-                      View Resume
+                    <Button 
+                      variant="outline"
+                      asChild
+                    >
+                      <a href="khizar-ali-cv.pdf" target="_blank" rel="noopener noreferrer">
+                        <BookOpen className="h-4 w-4 mr-2" />
+                        View Resume
+                      </a>
                     </Button>
                   </div>
                 </ScrollAnimation>
