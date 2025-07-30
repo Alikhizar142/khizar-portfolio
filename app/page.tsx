@@ -204,25 +204,37 @@ export default function Portfolio() {
 
                   <ScrollAnimation animation="fadeInUp" delay={500}>
                     <div className="flex flex-wrap gap-4 mb-8">
-                      <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold">
-                        <Mail className="h-5 w-5 mr-2" />
-                        Get In Touch
+                      <Button 
+                        size="lg" 
+                        className="bg-white text-blue-600 hover:bg-blue-50 font-semibold"
+                        asChild
+                      >
+                        <a href="mailto:alikhizar142@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards,">
+                          <Mail className="h-5 w-5 mr-2" />
+                          Get In Touch
+                        </a>
                       </Button>
                       <Button
                         size="lg"
                         variant="outline"
                         className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm bg-transparent"
+                        asChild
                       >
-                        <Download className="h-5 w-5 mr-2" />
-                        Download CV
+                        <a href="/khizar-ali-cv.pdf" download>
+                          <Download className="h-5 w-5 mr-2" />
+                          Download CV
+                        </a>
                       </Button>
                       <Button
                         size="lg"
                         variant="outline"
                         className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm bg-transparent"
+                        asChild
                       >
-                        <Github className="h-5 w-5 mr-2" />
-                        GitHub
+                        <a href="https://github.com/Alikhizar142" target="_blank" rel="noopener noreferrer">
+                          <Github className="h-5 w-5 mr-2" />
+                          GitHub
+                        </a>
                       </Button>
                     </div>
                   </ScrollAnimation>
@@ -753,25 +765,34 @@ export default function Portfolio() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-8"
+                asChild
               >
-                <Mail className="h-5 w-5 mr-2" />
-                Send Message
+                <a href="mailto:alikhizar142@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards,">
+                  <Mail className="h-5 w-5 mr-2" />
+                  Send Message
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 bg-transparent"
+                asChild
               >
-                <Github className="h-5 w-5 mr-2" />
-                View GitHub
+                <a href="https://github.com/Alikhizar142" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-5 w-5 mr-2" />
+                  View GitHub
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 bg-transparent"
+                asChild
               >
-                <Linkedin className="h-5 w-5 mr-2" />
-                LinkedIn
+                <a href="https://linkedin.com/in/alikhizar142" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5 mr-2" />
+                  LinkedIn
+                </a>
               </Button>
             </div>
           </ScrollAnimation>
