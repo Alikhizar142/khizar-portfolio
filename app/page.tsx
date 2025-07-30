@@ -220,7 +220,7 @@ export default function Portfolio() {
                         className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm bg-transparent"
                         asChild
                       >
-                        <a href="/khizar-ali-cv.pdf" download>
+                        <a href="khizar-ali-cv.pdf" download>
                           <Download className="h-5 w-5 mr-2" />
                           Download CV
                         </a>
