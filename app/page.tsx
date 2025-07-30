@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollAnimation } from "@/components/scroll-animation"
 import { StaggerContainer } from "@/components/stagger-container"
+import { CountingAnimation } from "@/components/counting-animation"
 import {
   Mail,
   Phone,
@@ -153,10 +154,10 @@ export default function Portfolio() {
   ]
 
   const stats = [
-    { label: "Projects Completed", value: "6+", icon: <Target className="h-6 w-6" /> },
-    { label: "Technologies Mastered", value: "15+", icon: <Zap className="h-6 w-6" /> },
-    { label: "Academic Awards", value: "2", icon: <Award className="h-6 w-6" /> },
-    { label: "Years of Experience", value: "2+", icon: <TrendingUp className="h-6 w-6" /> },
+    { label: "Projects Completed", value: 6, suffix: "+", icon: <Target className="h-6 w-6" /> },
+    { label: "Technologies Mastered", value: 15, suffix: "+", icon: <Zap className="h-6 w-6" /> },
+    { label: "Academic Awards", value: 2, suffix: "", icon: <Award className="h-6 w-6" /> },
+    { label: "Years of Experience", value: 2, suffix: "+", icon: <TrendingUp className="h-6 w-6" /> },
   ]
 
   return (
@@ -300,7 +301,14 @@ export default function Portfolio() {
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
                       {stat.icon}
                     </div>
-                    <div className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</div>
+                    <div className="text-3xl font-bold text-gray-900 mb-2">
+                      <CountingAnimation 
+                        end={stat.value} 
+                        suffix={stat.suffix}
+                        duration={2000}
+                        className="text-3xl font-bold text-gray-900"
+                      />
+                    </div>
                     <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
                   </CardContent>
                 </Card>
