@@ -789,7 +789,7 @@ export default function Portfolio() {
                 className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 bg-transparent"
                 asChild
               >
-                <a href="https://linkedin.com/in/alikhizar142" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/akrcy/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5 mr-2" />
                   LinkedIn
                 </a>
