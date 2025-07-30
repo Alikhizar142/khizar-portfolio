@@ -33,13 +33,15 @@ import {
 export default function Portfolio() {
   const skills = [
     { name: "Python", level: 95, color: "bg-blue-500" },
-    { name: "TensorFlow", level: 90, color: "bg-orange-500" },
+    { name: "TensorFlow/Keras", level: 90, color: "bg-orange-500" },
     { name: "OpenCV", level: 88, color: "bg-green-500" },
     { name: "Machine Learning", level: 92, color: "bg-purple-500" },
     { name: "Deep Learning", level: 89, color: "bg-pink-500" },
     { name: "Computer Vision", level: 87, color: "bg-indigo-500" },
     { name: "C++", level: 85, color: "bg-red-500" },
     { name: "SQL", level: 83, color: "bg-yellow-500" },
+    { name: "Git/GitHub", level: 90, color: "bg-gray-500" },
+    { name: "Data Analysis", level: 86, color: "bg-teal-500" },
   ]
 
   const projects = [
@@ -47,7 +49,7 @@ export default function Portfolio() {
       title: "Plant Disease Detection System",
       period: "Sep 2023 - Oct 2023",
       description:
-        "Advanced deep learning model using VGG19 architecture to classify plant leaves as healthy or diseased with an intuitive Tkinter GUI interface.",
+        "Developed a deep learning model using VGG19 to classify images of plant leaves as healthy or diseased. The system includes a Tkinter-based GUI for easy user interaction.",
       technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "Tkinter"],
       link: "https://github.com/Alikhizar142/Sync-Intern-Internship/tree/main/Plant_Disease_Detection",
       icon: <Eye className="h-6 w-6" />,
@@ -58,8 +60,8 @@ export default function Portfolio() {
       title: "Pneumonia Detection using CNN",
       period: "Sep 2024 - Dec 2024",
       description:
-        "Cutting-edge deep learning project for diagnosing pneumonia from chest X-ray images with real-time web interface and deployment.",
-      technologies: ["Python", "TensorFlow", "CNN", "Flask", "Streamlit"],
+        "Deep learning project for diagnosing pneumonia from chest X-ray images. Includes full model training in Jupyter Notebooks and real-time inference via a web interface (Flask and Streamlit).",
+      technologies: ["Python", "TensorFlow/Keras", "CNN", "Flask", "Streamlit"],
       link: "https://github.com/Alikhizar142/Pneumonia_Detection",
       demoLink: "https://pneumoniadetection-teama.streamlit.app/",
       icon: <Brain className="h-6 w-6" />,
@@ -70,8 +72,8 @@ export default function Portfolio() {
       title: "Handwritten Digit Recognition",
       period: "Sep 2023 - Oct 2023",
       description:
-        "Real-time CNN model for digit recognition using MNIST dataset with live webcam integration and high accuracy performance.",
-      technologies: ["Python", "TensorFlow", "Keras", "OpenCV"],
+        "Built a Convolutional Neural Network to recognize hand-written digits using the MNIST dataset. The model is capable of real-time digit prediction through webcam feed.",
+      technologies: ["Python", "TensorFlow/Keras", "OpenCV"],
       link: "https://github.com/Alikhizar142/Sync-Intern-Internship/tree/main/Digit_recognization",
       icon: <Code className="h-6 w-6" />,
       gradient: "from-purple-400 to-pink-600",
@@ -80,27 +82,27 @@ export default function Portfolio() {
       title: "Solar System Ontology",
       period: "Sep 2024 - Dec 2024",
       description:
-        "Comprehensive RDF ontology in Turtle format representing the Solar System with interactive graphs and semantic web capabilities.",
-      technologies: ["Protégé", "RDF/Turtle", "OWL", "OntoGraph"],
+        "Created an RDF ontology in Turtle format to represent the Solar System, integrating data about planets, moons, and orbits. Designed for linked data applications with interactive graphs.",
+      technologies: ["Protege", "RDF/Turtle", "OWL", "OntoGraph"],
       link: "https://github.com/Alikhizar142/Solar-System-Ontology",
       icon: <Globe className="h-6 w-6" />,
       gradient: "from-orange-400 to-red-600",
     },
     {
-      title: "School Management System",
+      title: "School Management System (SMS)",
       period: "Feb 2024 - May 2024",
       description:
-        "Full-stack web application for comprehensive school operations management with secure role-based access control.",
+        "A web-based system for managing school operations—student and teacher profiles, class scheduling, attendance tracking, and grade management. Features secure login for different user roles.",
       technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       link: "https://github.com/Alikhizar142/School-Management-System-SMS",
       icon: <Database className="h-6 w-6" />,
       gradient: "from-teal-400 to-blue-600",
     },
     {
-      title: "Facial Emotion Detection",
+      title: "Facial Emotion Detection using Deep Learning",
       period: "Apr 2024 - May 2024",
       description:
-        "Advanced real-time facial emotion recognition system using CNN architecture with OpenCV integration.",
+        "A real-time facial emotion recognition system that detects human emotions (such as happy, sad, angry, neutral, surprise, disgust, fear) from webcam input. Utilizes a CNN trained on standard datasets.",
       technologies: ["Python", "CNN", "OpenCV", "Deep Learning"],
       link: "https://github.com/Alikhizar142/Facial-Emotion-Detection-using-Deep-learning",
       icon: <Eye className="h-6 w-6" />,
@@ -116,45 +118,48 @@ export default function Portfolio() {
       period: "Jul 2025 - Current",
       type: "Full-time",
       description: [
-        "Developed advanced CV model for face and emotion detection using DeepFace and OpenCV",
-        "Implemented intelligent logic to verify user actions based on AI agent prompts",
-        "Built real-time webcam interface for emotion and action detection systems",
-        "Integrated model responses with AI agent workflows for interactive wellness applications",
+        "Developed a CV model to detect face and emotions using DeepFace and OpenCV",
+        "Implemented logic to verify user actions based on agent prompts (e.g., paper on right/left eye)",
+        "Built a real-time webcam interface for emotion and action detection",
+        "Integrated model responses with AI agent workflows for interactive wellness tasks",
+        "Ensured clean, modular code for future agentic AI integration",
       ],
       color: "bg-blue-500",
     },
     {
       title: "Teaching Assistant",
-      company: "FAST National University",
+      company: "FAST National University of Computer and Emerging Sciences (NUCES)",
       location: "Peshawar, Pakistan",
       period: "Feb 2025 - May 2025",
       type: "Part-time",
       description: [
-        "Served as TA for undergraduate Artificial Intelligence course with 100+ students",
-        "Created comprehensive quizzes and assignments for AI concepts evaluation",
-        "Provided one-on-one assistance to students with complex AI algorithms",
-        "Maintained academic integrity and delivered constructive feedback on submissions",
+        "Served as a Teaching Assistant for the undergraduate course Artificial Intelligence",
+        "Created and graded quizzes and assignments for AI concepts evaluation",
+        "Assisted students with conceptual understanding and complex AI algorithms",
+        "Supported the instructor in delivering course material",
+        "Maintained academic integrity and provided constructive feedback on submissions",
       ],
       color: "bg-green-500",
     },
     {
-      title: "AI Engineer Intern",
+      title: "Artificial Intelligence Engineer",
       company: "SYNC Intern's",
       location: "Remote",
       period: "Sep 2023 - Oct 2023",
       type: "Internship",
       description: [
-        "Developed production-ready AI models for Plant Disease Detection and Digit Recognition",
-        "Implemented advanced data preprocessing pipelines and model evaluation metrics",
-        "Successfully deployed models using modern Python frameworks and libraries",
-        "Collaborated effectively via GitHub with comprehensive documentation and reports",
+        "Developed AI models for Plant Disease Detection and Digit Recognition using CNNs (VGG19, MNIST)",
+        "Preprocessed image data and evaluated models using standard metrics",
+        "Deployed models using Python (TensorFlow, Keras, OpenCV)",
+        "Collaborated via GitHub and delivered complete documentation and reports",
+        "Met all deadlines with strong performance and technical accuracy",
       ],
       color: "bg-purple-500",
     },
   ]
 
   const stats = [
-    { label: "Projects Completed", value: 6, suffix: "+", icon: <Target className="h-6 w-6" /> },
+    { label: "Projects Completed", value: 6, suffix: "", icon: <Target className="h-6 w-6" /> },
     { label: "Technologies Mastered", value: 15, suffix: "+", icon: <Zap className="h-6 w-6" /> },
     { label: "Academic Awards", value: 2, suffix: "", icon: <Award className="h-6 w-6" /> },
     { label: "Years of Experience", value: 2, suffix: "+", icon: <TrendingUp className="h-6 w-6" /> },
@@ -197,8 +202,8 @@ export default function Portfolio() {
 
                   <ScrollAnimation animation="fadeInUp" delay={400}>
                     <p className="text-xl sm:text-2xl text-blue-100 mb-8 leading-relaxed">
-                      AI Engineer & Student passionate about building{" "}
-                      <span className="text-yellow-300 font-semibold">intelligent systems</span> that solve real-world
+                      AI Student & Engineer passionate about building{" "}
+                      <span className="text-yellow-300 font-semibold">smart systems</span> that solve real-world
                       problems
                     </p>
                   </ScrollAnimation>
@@ -338,9 +343,9 @@ export default function Portfolio() {
                     possible with artificial intelligence.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    I enjoy working with cutting-edge tools like Python, TensorFlow, and OpenCV to create innovative
-                    solutions. My academic excellence has been recognized with the Dean's List and Brown's Medal for top
-                    grades.
+                    I enjoy working with tools like Python, TensorFlow, and OpenCV to create innovative solutions. I've
+                    also been recognized on the Dean's List and received Brown's Medal for top grades, demonstrating my
+                    commitment to academic excellence.
                   </p>
                   <p className="text-gray-600 leading-relaxed">
                     I'm always ready to learn and take on new challenges in AI, constantly exploring new technologies
@@ -494,11 +499,11 @@ export default function Portfolio() {
                             <div className="text-2xl font-bold text-gray-900">
                               Bachelor of Science in Artificial Intelligence
                             </div>
-                            <div className="text-lg font-semibold text-gray-700">FAST National University (NUCES)</div>
+                            <div className="text-lg font-semibold text-gray-700">FAST National University of Computer and Emerging Sciences (NUCES)</div>
                           </div>
                         </CardTitle>
                         <CardDescription className="text-base text-gray-600 mt-2">
-                          Peshawar, Pakistan • EQF Level 6
+                          Peshawar, Pakistan • EQF Level 6 • NQF Level 6
                         </CardDescription>
                       </div>
                       <Badge variant="secondary" className="flex items-center gap-1 px-4 py-2 text-base">
@@ -519,7 +524,7 @@ export default function Portfolio() {
                             </li>
                             <li className="flex items-center gap-2">
                               <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                              Artificial Intelligence, Machine Learning, Neural Networks
+                              Artificial Intelligence, Machine Learning, Neural Networks, Reinforcement Learning
                             </li>
                             <li className="flex items-center gap-2">
                               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -542,7 +547,7 @@ export default function Portfolio() {
                           <ul className="space-y-2 text-gray-600">
                             <li className="flex items-center gap-2">
                               <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                              Python, C++, SQL, TensorFlow, Keras, OpenCV
+                              Python, C++, SQL, TensorFlow, Keras, OpenCV, DeepFace
                             </li>
                             <li className="flex items-center gap-2">
                               <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
@@ -679,7 +684,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-gray-900">Brown's Medal</div>
-                      <div className="text-lg text-gray-700">FAST National University</div>
+                      <div className="text-lg text-gray-700">FAST National University (NUCES)</div>
                     </div>
                   </CardTitle>
                 </CardHeader>
@@ -687,7 +692,7 @@ export default function Portfolio() {
                   <p className="text-gray-600 leading-relaxed">
                     Awarded the prestigious Brown's Medal for securing the highest GPA in the department during Spring
                     2023 and Fall 2023 semesters. This medal recognizes academic excellence, consistency, and
-                    exceptional performance across all registered courses.
+                    exceptional performance across all registered courses, distinguishing the recipient as a top scholar among peers.
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-orange-600 font-medium">
                     <Star className="h-4 w-4" />
@@ -707,7 +712,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-gray-900">Dean's List</div>
-                      <div className="text-lg text-gray-700">FAST National University</div>
+                      <div className="text-lg text-gray-700">FAST National University (NUCES)</div>
                     </div>
                   </CardTitle>
                 </CardHeader>
