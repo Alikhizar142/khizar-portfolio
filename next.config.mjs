@@ -12,6 +12,7 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   basePath: process.env.NODE_ENV === 'production' ? '/khizar-portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/khizar-portfolio' : '',
 }
 
 export default nextConfig
