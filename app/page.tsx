@@ -162,7 +162,7 @@ export default function Portfolio() {
     { label: "Projects Completed", value: 6, suffix: "", icon: <Target className="h-6 w-6" /> },
     { label: "Technologies Mastered", value: 15, suffix: "+", icon: <Zap className="h-6 w-6" /> },
     { label: "Academic Awards", value: 2, suffix: "", icon: <Award className="h-6 w-6" /> },
-    { label: "Years of Experience", value: 2, suffix: "+", icon: <TrendingUp className="h-6 w-6" /> },
+    { label: "Years of Experience", value: 1, suffix: "+", icon: <TrendingUp className="h-6 w-6" /> },
   ]
 
   return (
