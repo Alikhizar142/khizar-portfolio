@@ -266,7 +266,7 @@ export default function Portfolio() {
                     {/* Profile Image */}
                     <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-white/20">
                       <img
-                        src="placeholder-user.jpg"
+                        src="placeholder-user.jpg?v=2"
                         alt="Khizar Ali - AI Engineer"
                         className="w-full h-full object-cover"
                       />
