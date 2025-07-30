@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my expertise in Artificial Int
 
 ## 🚀 Live Demo
 
-Visit my portfolio: [https://yourusername.github.io/khizar-portfolio](https://yourusername.github.io/khizar-portfolio)
+Visit my portfolio: [https://alikhizar142.github.io/khizar-portfolio](https://alikhizar142.github.io/khizar-portfolio)
 
 ## 🛠️ Technologies Used
 
@@ -51,7 +51,7 @@ khizar-portfolio/
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/khizar-portfolio.git
+git clone https://github.com/Alikhizar142/khizar-portfolio.git
 cd khizar-portfolio
 ```
 
@@ -98,7 +98,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Email**: alikhizar142@gmail.com
 - **Phone**: (+92) 3177941300
 - **Location**: Peshawar, Pakistan
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **GitHub**: [@Alikhizar142](https://github.com/Alikhizar142)
 
 ---
 
