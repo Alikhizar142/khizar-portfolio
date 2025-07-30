@@ -4,9 +4,12 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Khizar Ali - AI Engineer Portfolio',
+  description: 'AI Engineer & Student passionate about building intelligent systems that solve real-world problems. View my projects, experience, and skills.',
+  generator: 'Next.js',
+  keywords: ['AI Engineer', 'Machine Learning', 'Computer Vision', 'Python', 'TensorFlow', 'Portfolio'],
+  authors: [{ name: 'Khizar Ali' }],
+  creator: 'Khizar Ali',
 }
 
 export default function RootLayout({
