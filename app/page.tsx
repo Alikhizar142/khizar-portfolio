@@ -46,6 +46,18 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "FetoVision (Final Year Project)",
+      period: "Aug 2025 - Jun 2026",
+      description:
+        "AI-based system for automated fetal biometry estimation from ultrasound images. U-Net segmentation to detect fetal structures (head, abdomen, femur) and measurement extraction for HC, AC, and FL. Integrated Grad-CAM for interpretability and an end-to-end pipeline for image/video analysis.",
+      technologies: ["Python", "TensorFlow", "Keras", "U-Net", "OpenCV", "Grad-CAM"],
+      link: "https://fetovision.app",
+      demoLink: "https://fetovision.app",
+      icon: <Eye className="h-6 w-6" />,
+      gradient: "from-red-400 to-pink-600",
+      featured: true,
+    },
+    {
       title: "Plant Disease Detection System",
       period: "Sep 2023 - Oct 2023",
       description:
@@ -113,16 +125,14 @@ export default function Portfolio() {
   const experiences = [
     {
       title: "AI Engineer",
-      company: "Nusys Research Lab",
+      company: "NuSYS Research Lab",
       location: "Peshawar, Pakistan",
-      period: "Jul 2025 - Current",
-      type: "Full-time",
+      period: "Aug 2025 - Sep 2025",
+      type: "Contract",
       description: [
-        "Developed a CV model to detect face and emotions using DeepFace and OpenCV",
-        "Implemented logic to verify user actions based on agent prompts (e.g., paper on right/left eye)",
-        "Built a real-time webcam interface for emotion and action detection",
-        "Integrated model responses with AI agent workflows for interactive wellness tasks",
-        "Ensured clean, modular code for future agentic AI integration",
+        "Built a computer vision module for a multimodal psychology bot",
+        "Integrated OpenCV and Google ML Kit in Flutter for real-time processing",
+        "Contributed to system-level AI architecture and model optimization",
       ],
       color: "bg-blue-500",
     },
@@ -130,14 +140,11 @@ export default function Portfolio() {
       title: "Teaching Assistant",
       company: "FAST National University of Computer and Emerging Sciences (NUCES)",
       location: "Peshawar, Pakistan",
-      period: "Feb 2025 - May 2025",
+      period: "Jan 2025 - May 2025",
       type: "Part-time",
       description: [
-        "Served as a Teaching Assistant for the undergraduate course Artificial Intelligence",
-        "Created and graded quizzes and assignments for AI concepts evaluation",
-        "Assisted students with conceptual understanding and complex AI algorithms",
-        "Supported the instructor in delivering course material",
-        "Maintained academic integrity and provided constructive feedback on submissions",
+        "Assisted in AI course delivery, labs, and model debugging",
+        "Prepared and graded assignments and supported student projects",
       ],
       color: "bg-green-500",
     },
@@ -215,7 +222,7 @@ export default function Portfolio() {
                         className="bg-white text-blue-600 hover:bg-blue-50 font-semibold"
                         asChild
                       >
-                        <a href="mailto:alikhizar142@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards,">
+                        <a href="mailto:p229269@pwr.nu.edu.pk?subject=Portfolio%20Inquiry&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards,">
                           <Mail className="h-5 w-5 mr-2" />
                           Get In Touch
                         </a>
@@ -226,7 +233,7 @@ export default function Portfolio() {
                         className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm bg-transparent"
                         asChild
                       >
-                        <a href="khizar-ali-cv.pdf" download>
+                        <a href="/Khizar_resume.pdf" download>
                           <Download className="h-5 w-5 mr-2" />
                           Download CV
                         </a>
@@ -253,11 +260,11 @@ export default function Portfolio() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Mail className="h-4 w-4" />
-                        alikhizar142@gmail.com
+                        p229269@pwr.nu.edu.pk
                       </div>
                       <div className="flex items-center gap-2">
                         <Phone className="h-4 w-4" />
-                        (+92) 3177941300
+                        +92-317-7941300
                       </div>
                     </div>
                   </ScrollAnimation>
@@ -338,18 +345,12 @@ export default function Portfolio() {
               <div>
                 <div className="prose prose-lg">
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    I'm an AI student with a passion for building smart systems that solve real problems. I've worked on
-                    projects like emotion detection and learning-based games, always pushing the boundaries of what's
-                    possible with artificial intelligence.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-6">
-                    I enjoy working with tools like Python, TensorFlow, and OpenCV to create innovative solutions. I've
-                    also been recognized on the Dean's List and received Brown's Medal for top grades, demonstrating my
-                    commitment to academic excellence.
+                    AI undergraduate specializing in Computer Vision and Deep Learning. Experienced in building end-to-end
+                    ML systems including model training, optimization, deployment, and web/GUI integration. Strong
+                    foundation in neural networks, data processing, and scalable AI development.
                   </p>
                   <p className="text-gray-600 leading-relaxed">
-                    I'm always ready to learn and take on new challenges in AI, constantly exploring new technologies
-                    and methodologies to stay at the forefront of this rapidly evolving field.
+                    Education: B.S. Artificial Intelligence — FAST-NUCES, Peshawar (Aug 2022 – Jun 2026), GPA: 3.5/4.0.
                   </p>
                 </div>
 
@@ -359,7 +360,7 @@ export default function Portfolio() {
                       className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
                       asChild
                     >
-                      <a href="mailto:alikhizar142@gmail.com?subject=Collaboration%20Opportunity&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20potential%20collaboration%20opportunities.%0A%0ABest%20regards,">
+                      <a href="mailto:p229269@pwr.nu.edu.pk?subject=Collaboration%20Opportunity&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20potential%20collaboration%20opportunities.%0A%0ABest%20regards,">
                         <Users className="h-4 w-4 mr-2" />
                         Let's Collaborate
                       </a>
@@ -368,7 +369,7 @@ export default function Portfolio() {
                       variant="outline"
                       asChild
                     >
-                      <a href="khizar-ali-cv.pdf" target="_blank" rel="noopener noreferrer">
+                      <a href="/Khizar_resume.pdf" target="_blank" rel="noopener noreferrer">
                         <BookOpen className="h-4 w-4 mr-2" />
                         View Resume
                       </a>
@@ -757,7 +758,7 @@ export default function Portfolio() {
                 <CardContent className="p-6 text-center">
                   <Mail className="h-8 w-8 mx-auto mb-4 text-blue-400" />
                   <h3 className="font-semibold mb-2">Email</h3>
-                  <p className="text-gray-300">alikhizar142@gmail.com</p>
+                  <p className="text-gray-300">p229269@pwr.nu.edu.pk</p>
                 </CardContent>
               </Card>
             </ScrollAnimation>
@@ -767,7 +768,7 @@ export default function Portfolio() {
                 <CardContent className="p-6 text-center">
                   <Phone className="h-8 w-8 mx-auto mb-4 text-green-400" />
                   <h3 className="font-semibold mb-2">Phone</h3>
-                  <p className="text-gray-300">(+92) 3177941300</p>
+                  <p className="text-gray-300">+92-317-7941300</p>
                 </CardContent>
               </Card>
             </ScrollAnimation>
@@ -790,7 +791,7 @@ export default function Portfolio() {
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-8"
                 asChild
               >
-                <a href="mailto:alikhizar142@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards,">
+                <a href="mailto:p229269@pwr.nu.edu.pk?subject=Portfolio%20Inquiry&body=Hi%20Khizar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards,">
                   <Mail className="h-5 w-5 mr-2" />
                   Send Message
                 </a>
