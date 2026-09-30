@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Khizar Ali - AI Engineer Portfolio',
+  title: 'Khizar - AI Engineer Portfolio',
   description: 'AI Engineer & Student passionate about building intelligent systems that solve real-world problems. View my projects, experience, and skills.',
   generator: 'Next.js',
   keywords: ['AI Engineer', 'Machine Learning', 'Computer Vision', 'Python', 'TensorFlow', 'Portfolio'],
